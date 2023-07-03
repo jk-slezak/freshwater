@@ -193,6 +193,39 @@ footer {
   cursor: pointer;
 }
 
+.icon-cart-wrapper {
+  display: flex;
+  justify-content: center;
+  position: relative;
+}
+
+.icon-heart-wrapper {
+  display: none;
+}
+
+.icon-cart-wrapper .quantity {
+  width: 16px;
+  height: 16px;
+  background-color: #00BEFF;
+  position: absolute;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  right: 13px;
+  top: -5px;
+}
+
+.icon-cart-wrapper .quantity p {
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 17px;
+  color: #FFFFFF;
+}
+
+.icon-heart-wrapper {
+  display: none;
+}
+
 .menu-mobile {
   display: block;
   margin-right: 15px;
@@ -298,6 +331,7 @@ footer {
 
 .product-wrapper {
   position: relative;
+  justify-content: space-between;
   box-shadow: 0 3px 6px 0 #F0F0F0;
   border-radius: 4px;
   padding: 15px 18px 15px 17px;
@@ -406,7 +440,7 @@ footer {
   border: 1px solid #00BEFF;
   border-radius: 18px;
   color: #FFFFFF;
-  font-size: 16px;
+  font-size: 14px;
   font-weight: 600;
   line-height: 21px;
   letter-spacing: 0em;
@@ -435,12 +469,14 @@ footer {
 .entries {
   display: flex;
   flex-direction: column;
-  align-items: center;
   margin: 20px 0 0 0;
 }
 
 .entrie-wrapper {
-  width: 387px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 375px;
   margin-bottom: 20px;
 }
 
@@ -462,8 +498,9 @@ footer {
   font-size: 18px;
   font-weight: 700;
   line-height: 27px;
-  letter-spacing: 0em;
   text-align: center;
+  margin: 0 50px;
+
 }
 
 .newsletter {
@@ -478,12 +515,15 @@ footer {
 
 .newsletter-title-mobile {
   display: inline;
+  font-size: 25px;
+  line-height: 38px;
+  margin: 0 20px;
 }
 
 .newsletter-p {
   font-size: 16px;
   font-weight: 400;
-  line-height: 21px;
+  line-height: 24px;
   letter-spacing: 0em;
   text-align: center;
   margin-bottom: 20px;
@@ -762,6 +802,7 @@ footer {
 }
 
 .mobile-menu ul li {
+  position: relative;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -781,6 +822,7 @@ footer {
 .mobile-menu ul li input {
   border: 1px solid #ECEEF3;
   padding: 10px 0 10px 10px;
+  width: 100%;
 }
 
 .mobile-menu ul li input:focus {
@@ -789,6 +831,11 @@ footer {
 
 .menu-btn.active + .mobile-menu {
   right: 0;
+}
+
+.mobile-menu ul li .search-icon-mobile {
+  position: absolute;
+  right: 26px;
 }
 
 .menu-btn.active {
@@ -822,12 +869,13 @@ footer {
 @media (min-width: 1280px) {
   h1 {
     font-size: 32px;
-  };
+  }
 
   h2 {
     font-size: 30px;
     line-height: 30px;
-  } 
+  }
+
   footer {
     background-color: #4E4B66;
     display: flex;
@@ -889,6 +937,8 @@ footer {
   .icon-cart {
     margin: 0 19.59px 0 0;
   }
+
+  
 
   .menu-mobile {
     display: none;
@@ -1019,6 +1069,7 @@ footer {
   }
 
   .btn-primary {
+    font-size: 16px;
     min-width: 180px;
     padding: 10px 30px 11.8px 30px;
   }
@@ -1168,6 +1219,31 @@ footer {
 
   .menu-btn.active {
     top: 36px;
+  }
+
+  .icon-heart-wrapper {
+    display: flex;
+    justify-content: center;
+    position: relative;
+  }
+  
+  .icon-heart-wrapper .quantity {
+    width: 16px;
+    height: 16px;
+    background-color: #00BEFF;
+    position: absolute;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    right: 24px;
+    top: -5px;
+  }
+  
+  .icon-heart-wrapper .quantity p {
+    font-size: 11px;
+    font-weight: 600;
+    line-height: 17px;
+    color: #FFFFFF;
   }
 }
 

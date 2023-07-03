@@ -29,10 +29,19 @@
           </button>
         </div>
         <img class="icon" src="assets/user.svg" alt="Użytkownik"/>
-        <img class="icon" src="assets/heart.svg" alt="Ulubione"/>
-        <img class="icon-cart" src="assets/cart.svg" alt="Koszyk"/>
-        <p class="price">0,00 zł</p>
-        
+        <div class="icon-heart-wrapper">
+          <div class="quantity">
+            <p>0</p>
+          </div>
+          <img class="icon" src="assets/heart.svg" alt="Ulubione"/>
+        </div>
+        <div class="icon-cart-wrapper">
+          <div class="quantity">
+            <p id="cart-amount">0</p>
+          </div>
+          <img class="icon-cart" src="assets/cart.svg" alt="Koszyk"/>
+        </div>
+        <p class="price" id="price">0,00 zł</p>
         <div class="menu-btn">
           <img class="menu-mobile" src="assets/menu.svg" alt="Menu"/>
         </div>
@@ -53,7 +62,10 @@
             <li><a href="#">Kawa ziarnista</a></li>
             <li><a href="#">Coś do kawy</a></li>
             <li><a href="#">Promocje</a></li>
-            <li><input type="text" placeholder="Wpisz czego szukasz"></li>
+            <li>
+              <input type="text" placeholder="Wpisz czego szukasz">
+              <img class="search-icon-mobile" src="assets/search-mobile.svg" alt="">
+            </li>
             <li class="dark">
               <img src="assets/user_mobile.svg" alt="">
               <a href="#">Zaloguj się</a></li>
@@ -190,7 +202,7 @@
               <div class="product-price-wrapper">
                 <p class="product-price">35,40 zł</p>
                 <p class="product-price-old">35,40 zł</p>
-                <button class="btn-cart flex-row-center">
+                <button class="btn-cart flex-row-center" id="button1">
                   <img src="assets/cart-small.svg" alt="Koszyk"/>
                 </button>
               </div>
@@ -205,7 +217,7 @@
               <div class="product-price-wrapper">
                 <p class="product-price">44,20 zł</p>
                 <p class="product-price-old">52,00 zł</p>
-                <button class="btn-cart flex-row-center">
+                <button class="btn-cart flex-row-center" id="button2">
                   <img src="assets/cart-small.svg" alt="Koszyk">
                 </button>
               </div>
@@ -220,7 +232,7 @@
               <div class="product-price-wrapper">
                 <p class="product-price">110,50 zł</p>
                 <p class="product-price-old">130,00 zł</p>
-                <button class="btn-cart flex-row-center">
+                <button class="btn-cart flex-row-center" id="button3">
                   <img src="assets/cart-small.svg" alt="Koszyk">
                 </button>
               </div>
@@ -235,7 +247,7 @@
               <div class="product-price-wrapper">
                 <p class="product-price">30,02 zł</p>
                 <p class="product-price-old">35,32 zł</p>
-                <button class="btn-cart flex-row-center">
+                <button class="btn-cart flex-row-center" id="button4">
                   <img src="assets/cart-small.svg" alt="Koszyk">
                 </button>
               </div>
@@ -250,7 +262,7 @@
               <div class="product-price-wrapper">
                 <p class="product-price">35,40 zł</p>
                 <p class="product-price-old">35,40 zł</p>
-                <button class="btn-cart flex-row-center">
+                <button class="btn-cart flex-row-center" id="button5">
                   <img src="assets/cart-small.svg" alt="Koszyk">
                 </button>
               </div>
@@ -265,7 +277,7 @@
               <div class="product-price-wrapper">
                 <p class="product-price">44,20 zł</p>
                 <p class="product-price-old">52,00 zł</p>
-                <button class="btn-cart flex-row-center">
+                <button class="btn-cart flex-row-center" id="button2">
                   <img src="assets/cart-small.svg" alt="Koszyk">
                 </button>
               </div>
@@ -280,7 +292,7 @@
               <div class="product-price-wrapper">
                 <p class="product-price">110,50 zł</p>
                 <p class="product-price-old">130,00 zł</p>
-                <button class="btn-cart flex-row-center">
+                <button class="btn-cart flex-row-center" id="button3">
                   <img src="assets/cart-small.svg" alt="Koszyk">
                 </button>
               </div>
@@ -295,7 +307,7 @@
               <div class="product-price-wrapper">
                 <p class="product-price">30,02 zł</p>
                 <p class="product-price-old">35,32 zł</p>
-                <button class="btn-cart flex-row-center">
+                <button class="btn-cart flex-row-center" id="button4">
                   <img src="assets/cart-small.svg" alt="Koszyk">
                 </button>
               </div>
