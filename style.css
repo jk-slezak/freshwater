@@ -1097,6 +1097,7 @@ footer {
 
   .entrie-wrapper {
     margin: 0;
+    align-items: flex-start;
   }
 
   .entrie-img {
@@ -1123,6 +1124,7 @@ footer {
     line-height: 27px;
     letter-spacing: 0em;
     text-align: left;
+    margin: 0;
   }
 
   .newsletter {
